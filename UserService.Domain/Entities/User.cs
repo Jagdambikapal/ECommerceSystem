@@ -1,8 +1,8 @@
-﻿using System.Net;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Xml.Linq;
 namespace UserService.Domain.Entities
 {
-    
+    [Index(nameof(Email), Name = "Index_Email_Unique", IsUnique = true)]
     public class User
     {
         public Guid Id { get; set; }

@@ -6,7 +6,7 @@
         public Guid UserId { get; set; }
         public string Token { get; set; } = null!;
         public string ClientId { get; set; } = null!;    // Web/Android/iOS etc.
-        //public Client Client { get; set; } = null!;
+        public Client Client { get; set; } = null!;
         public string UserAgent { get; set; } = null!;   // Chrome, Firefox, Safari, etc.
         public DateTime CreatedAt { get; set; }
         public string CreatedByIp { get; set; } = null!;
